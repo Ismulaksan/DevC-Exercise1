@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halaman Biodata</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() { 
+        document.getElementById("demo").innerHTML = "Terima Kasih!";
+        }
+    </script>
 </head>
+
+<div class="header">
+    <h1>Biodata</h1>
+    <p>Halaman ini adalah <b>biodata</b> saya</p>
+</div>
 <body>
-    <center>
-        <h1>Biodata</h1>
-    </center>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Tentang Saya</a>
+        <a href="#">Kontak</a>
+    </div>  
+</br>
+    <div class="left-column">
+        <div class="polaroid">
+            <img src="img/wp3062310.jpg" alt="foto" style="width: 100%">
+            <div class="container">
+                <p><b>Tentang Saya</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <H2>Profil Saya</H2>
+        <p>
+            Nama Lengkap: <br>
+            <input type="text" name="Nama Lengkap" value="Ismul A">
+            <br>
+            Alamat: <br>
+            <input type="text" name="Alamat" value="Jl. Kartika No.99">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="demo"></p><button type="button" onclick="myFunction()">Klik Disini</button>
+        </p>
+    </div>
 </body>
+
 </html>
